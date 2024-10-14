@@ -17,7 +17,7 @@
         // echo json_encode($result);
 
         if($result->num_rows == 1) {
-            $_SESSION['user_id'] = $user->id;
+            $_SESSION["user_id"] = $user->id;
             header('Location: home.php');
             exit();
         }
